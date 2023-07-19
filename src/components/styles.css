@@ -1,0 +1,400 @@
+/* Header.css */
+
+.logoHeading {
+	color: #2d383c;
+	font-size: 3rem;
+	font-weight: 500;
+	margin: 0;
+}
+.logoSubHeading {
+	color: #0784b5;
+	font-size: larger;
+	margin: 0 0 0 66%;
+}
+.cvrLogo {
+	width: 110px;
+	height: 110px;
+	margin-left: 1.3rem;
+}
+.header {
+	display: flex;
+	padding: 0.5rem;
+}
+.logoName {
+	padding: 10px;
+}
+.navBarContainer {
+	background-color: #d7ebfc;
+}
+.navbar {
+	padding: 0;
+}
+.nav-item {
+	font-size: medium;
+	margin-right: 3rem;
+}
+.dropdown-item:active {
+	background-color: #0a1172;
+}
+.about {
+	margin-left: 1rem;
+}
+
+/* Footer.css */
+
+.footer {
+	color: #696969;
+	background-color: #2d383c;
+	margin: 0;
+	padding: 0.5rem;
+	font-size: small;
+	text-align: center;
+}
+.footer p {
+	margin: 0;
+}
+
+/* MainBody.css */
+
+.welcomePic {
+	width: 100%;
+	height: 28rem;
+	position: relative;
+}
+.welcomeMsg {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: fit-content;
+	height: fit-content;
+	color: #ffffff;
+}
+#welcomeMsg2 {
+	font-size: 4rem;
+	padding: 10px;
+}
+.contents {
+	padding: 3rem 4rem 0;
+}
+.contentHeading {
+	color: #0a1172;
+}
+.contentBody {
+	color: #575757;
+}
+.mainBodyContentsDiv {
+	margin-bottom: 3rem;
+}
+.gradient {
+	background-image: linear-gradient(
+		to right,
+		#036ba9,
+		#0081ba,
+		#0098c9,
+		#13aed7,
+		#37c5e2
+	);
+	padding: 3rem;
+	text-align: center;
+	color: #dff6ff;
+}
+.gradientContent {
+	padding: 1.5rem 10rem;
+}
+
+/* MoUs.css */
+
+.moUs {
+	margin-bottom: 3rem;
+}
+
+.mousPicMain {
+	width: 90%;
+	height: 32rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 5px;
+}
+
+.moUsContents {
+	margin-top: 3rem;
+	display: flex;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2rem;
+	background-color: #d7ebfc;
+}
+.moUsContents h2 {
+	color: #0a1172;
+}
+.moUsDescriptionRight {
+	padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+	margin-left: 3rem;
+}
+.moUsDescriptionLeft {
+	padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+	margin-right: 3rem;
+}
+.moUsDescription p {
+	margin-top: 2rem;
+}
+.moUsImage {
+	width: 374px;
+	height: 324px;
+}
+
+/* 
+Exhibits.css */
+
+.exhibits {
+	text-align: center;
+}
+.exhibitsImage {
+	width: 34rem;
+	height: 30rem;
+}
+.exhibitBox {
+	border: 3px solid #d7ebfc;
+	width: fit-content;
+	margin: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.exhibitBox img {
+	padding: 1rem;
+}
+.exhibitDiv {
+	margin: 3.5rem 15%;
+}
+.exhibitDiv h2 {
+	color: #2d383c;
+}
+.alumniCarousel {
+	display: flex;
+	padding: 1rem;
+	margin-left: 5%;
+}
+.alumniCarousel h2 {
+	color: #0a1172;
+	font-weight: 600;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 30%;
+	margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+hr {
+	border: 2px solid #575757;
+}
+
+/* ComponentCarousel.css */
+.slide {
+	position: relative;
+	padding: 2rem;
+	display: block;
+	margin: 1.3rem;
+	border: 1px solid #ffffff;
+}
+.slide div {
+	display: flex;
+}
+.sliderOuter {
+	width: 60%;
+	height: 14rem;
+	background-color: #d7ebfc;
+	overflow: hidden;
+}
+.sliderInner {
+	position: relative;
+	animation: imageUp 20s ease-in-out infinite;
+}
+@keyframes imageUp {
+	0%,
+	10%,
+	100% {
+		transform: translateY(0);
+	}
+	15%,
+	25% {
+		transform: translateY(-17%);
+	}
+	35%,
+	45% {
+		transform: translateY(-34%);
+	}
+	55%,
+	65% {
+		transform: translateY(-51%);
+	}
+	75%,
+	85% {
+		transform: translateY(-68%);
+	}
+	90%,
+	99.99% {
+		transform: translateY(-85%);
+	}
+}
+
+/* OurTeam.css */
+.teamContainer {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: 3rem;
+	margin-right: auto;
+	display: block;
+}
+.teamCard {
+	padding: 10px;
+	width: 30%;
+	background-color: #d7ebfc;
+	margin: 1rem;
+	text-align: center;
+}
+.teamCard img {
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	margin: 1rem;
+	border: 1px solid #0a1172;
+}
+.teamMember h4 {
+	color: #0a1172;
+}
+.teamMember p {
+	color: #575757;
+}
+
+/* Overseas.css */
+
+.groupImage {
+	width: 40rem;
+	height: 26rem;
+}
+.overseasCard {
+	display: flex;
+}
+
+.leftOverseasImage,
+.rightOverseasImage {
+	width: 17rem;
+	height: 26rem;
+}
+.leftOverseasCard,
+.rightOverseasCard {
+	background-color: #0098c9;
+}
+.leftOverseasImage {
+	margin-top: 10px;
+}
+.leftOverseasCard {
+	padding: 1rem 2rem;
+	margin: 2rem;
+}
+.leftOverseasCard .place {
+	color: #0a1172;
+}
+.leftOverseasCard .date {
+	color: #d7ebfc;
+}
+.middleOverseasCard {
+	margin: 3rem;
+}
+.middleOverseasCard h3 {
+	color: #2d383c;
+}
+.middleOverseasCard img {
+	padding-top: 10px;
+}
+.overseas h1 {
+	background-color: #0a1172;
+	color: #d7ebfc;
+	padding: 1.2rem;
+	padding-left: 2rem;
+}
+
+.rightOverseasCard {
+	padding: 3rem 2rem;
+	margin: 2rem;
+}
+
+/* WallOfFame.css */
+
+.wof h1 {
+	text-align: center;
+	color: #0a1172;
+	padding: 1rem;
+	padding-top: 2rem;
+	text-decoration: underline;
+}
+.wallOfFameCard {
+	display: flex;
+	background-color: #d7ebfc;
+	margin: 2rem 12rem;
+	padding: 2rem;
+}
+.wofImage {
+	width: 20rem;
+	height: 20rem;
+	border-radius: 10rem;
+}
+.wofCardInfo {
+	margin: 5rem;
+}
+
+/* JoinUs.css */
+.joinUs {
+	display: flex;
+	padding: 2rem;
+	margin: 1rem 10rem;
+}
+.joinUs div {
+	padding: 4rem;
+}
+.quote {
+	color: #0a1172;
+	font-size: 5rem;
+}
+.joinUsMsg{
+	color: #575757;
+}
+.joinUsAlumniImg {
+	height: 30rem;
+	width: 20rem;
+	border-radius: 15rem;
+	background-image: linear-gradient(
+		to right,
+		#036ba9,
+		#0081ba,
+		#0098c9,
+		#13aed7,
+		#37c5e2
+	);
+}
+.register{
+  color: #2d383c;
+}
+.register button{
+	margin-top: 10px;
+	padding: 0.5rem;
+	background-color: #0a1172;
+	color: #d7ebfc;
+	font-size: larger;
+	border: none;
+	border-radius: 10px;
+	width: 10rem;
+}
