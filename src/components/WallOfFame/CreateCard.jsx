@@ -6,14 +6,14 @@ export default function CreateCard(props) {
       },[])
     function Card(props) {
         return (
-            <div className="wallOfFameCard">
+            <div className="wallOfFameCard"  data-aos="fade-in-out" data-aos-anchor-placement="top-bottom">
                 <div >
-                    <img src={props.img} alt="alumni" className="wofImage" data-aos="fade-in-out"/>
+                    <img src={props.img} alt="alumni" className="wofImage"/>
                 </div>
                 <div className="wofCardInfo">
-                    <h3 data-aos="fade-in-out">{props.name}</h3>
-                    <p data-aos="fade-in-out">{props.branch}</p>
-                    <p data-aos="fade-in-out">{props.description}</p>
+                    <h3>{props.name}</h3>
+                    <p>{props.branch}</p>
+                    <p>{props.description}</p>
                 </div>
             </div>
         )

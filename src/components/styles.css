@@ -1,3 +1,22 @@
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.joinUsMsg,
+.contentBody,
+.teamMember p,
+.alumniGalleryCard p {
+	color: #454545;
+}
+.tableRow,
+.moUsContents p,
+.teamMember p,
+.wofCardInfo,
+.alumniAwardsInfo {
+	color: #2d383c;
+}
+
+/* -------------------------------------------------------------------------------------- */
 /* Header.css */
 
 .logoHeading {
@@ -7,7 +26,7 @@
 	margin: 0;
 }
 .logoSubHeading {
-	color: #0784b5;
+	color: #0098c9;
 	font-size: larger;
 	margin: 0 0 0 66%;
 }
@@ -24,7 +43,7 @@
 	padding: 10px;
 }
 .navBarContainer {
-	background-color: #d7ebfc;
+	background-color: #c9e3fa;
 }
 .navbar {
 	padding: 0;
@@ -33,6 +52,9 @@
 	font-size: medium;
 	margin-right: 3rem;
 }
+.nav-link {
+	color: #2d383c;
+}
 .dropdown-item:active {
 	background-color: #0a1172;
 }
@@ -40,10 +62,11 @@
 	margin-left: 1rem;
 }
 
+/* -------------------------------------------------------------------------------------- */
 /* Footer.css */
 
 .footer {
-	color: #696969;
+	color: #949494;
 	background-color: #2d383c;
 	margin: 0;
 	padding: 0.5rem;
@@ -54,6 +77,7 @@
 	margin: 0;
 }
 
+/* -------------------------------------------------------------------------------------- */
 /* MainBody.css */
 
 .welcomePic {
@@ -81,29 +105,40 @@
 .contentHeading {
 	color: #0a1172;
 }
-.contentBody {
-	color: #575757;
-}
 .mainBodyContentsDiv {
 	margin-bottom: 3rem;
 }
 .gradient {
-	background-image: linear-gradient(
-		to right,
-		#036ba9,
-		#0081ba,
-		#0098c9,
-		#13aed7,
-		#37c5e2
+	background: hsla(208, 83%, 88%, 1);
+
+	background: linear-gradient(
+		45deg,
+		hsla(208, 83%, 88%, 1) 0%,
+		hsla(195, 100%, 39%, 1) 100%
 	);
+
+	background: -moz-linear-gradient(
+		45deg,
+		hsla(208, 83%, 88%, 1) 0%,
+		hsla(195, 100%, 39%, 1) 100%
+	);
+
+	background: -webkit-linear-gradient(
+		45deg,
+		hsla(208, 83%, 88%, 1) 0%,
+		hsla(195, 100%, 39%, 1) 100%
+	);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9E3FA", endColorstr="#0098C9", GradientType=1 );
 	padding: 3rem;
 	text-align: center;
-	color: #dff6ff;
+	color: #ffffff;
 }
 .gradientContent {
 	padding: 1.5rem 10rem;
 }
 
+/* -------------------------------------------------------------------------------------- */
 /* MoUs.css */
 
 .moUs {
@@ -126,7 +161,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding: 2rem;
-	background-color: #d7ebfc;
+	background-color: #c9e3fa;
 }
 .moUsContents h2 {
 	color: #0a1172;
@@ -147,8 +182,8 @@
 	height: 324px;
 }
 
-/* 
-Exhibits.css */
+/* -------------------------------------------------------------------------------------- */
+/* Exhibits.css */
 
 .exhibits {
 	text-align: center;
@@ -158,7 +193,7 @@ Exhibits.css */
 	height: 30rem;
 }
 .exhibitBox {
-	border: 3px solid #d7ebfc;
+	border: 3px solid #c9e3fa;
 	width: fit-content;
 	margin: 3rem;
 	margin-left: auto;
@@ -198,10 +233,11 @@ Exhibits.css */
 	}
 }
 hr {
-	border: 2px solid #575757;
+	border: 2px solid #454545;
 }
 
-/* ComponentCarousel.css */
+/* -------------------------------------------------------------------------------------- */
+/* ProductExhibits.css */
 .slide {
 	position: relative;
 	padding: 2rem;
@@ -215,7 +251,7 @@ hr {
 .sliderOuter {
 	width: 60%;
 	height: 14rem;
-	background-color: #d7ebfc;
+	background-color: #c9e3fa;
 	overflow: hidden;
 }
 .sliderInner {
@@ -250,6 +286,7 @@ hr {
 	}
 }
 
+/* -------------------------------------------------------------------------------------- */
 /* OurTeam.css */
 .teamContainer {
 	margin-top: 2rem;
@@ -261,7 +298,7 @@ hr {
 .teamCard {
 	padding: 10px;
 	width: 30%;
-	background-color: #d7ebfc;
+	background-color: #c9e3fa;
 	margin: 1rem;
 	text-align: center;
 }
@@ -275,10 +312,8 @@ hr {
 .teamMember h4 {
 	color: #0a1172;
 }
-.teamMember p {
-	color: #575757;
-}
 
+/* -------------------------------------------------------------------------------------- */
 /* Overseas.css */
 
 .groupImage {
@@ -301,15 +336,16 @@ hr {
 .leftOverseasImage {
 	margin-top: 10px;
 }
+
 .leftOverseasCard {
 	padding: 1rem 2rem;
 	margin: 2rem;
 }
 .leftOverseasCard .place {
-	color: #0a1172;
+	color: #ffffff;
 }
 .leftOverseasCard .date {
-	color: #d7ebfc;
+	color: #ffffff;
 }
 .middleOverseasCard {
 	margin: 3rem;
@@ -322,7 +358,7 @@ hr {
 }
 .overseas h1 {
 	background-color: #0a1172;
-	color: #d7ebfc;
+	color: #ffffff;
 	padding: 1.2rem;
 	padding-left: 2rem;
 }
@@ -332,30 +368,32 @@ hr {
 	margin: 2rem;
 }
 
+/* -------------------------------------------------------------------------------------- */
 /* WallOfFame.css */
 
 .wof h1 {
 	text-align: center;
 	color: #0a1172;
-	padding: 1rem;
 	padding-top: 2rem;
-	text-decoration: underline;
 }
 .wallOfFameCard {
 	display: flex;
-	background-color: #d7ebfc;
+	background: #c9e3fa;
 	margin: 2rem 12rem;
-	padding: 2rem;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
 }
 .wofImage {
-	width: 20rem;
-	height: 20rem;
+	width: 12rem;
+	height: 12rem;
 	border-radius: 10rem;
+	margin-left: 3rem;
 }
 .wofCardInfo {
-	margin: 5rem;
+	margin: 1.5rem 2rem;
 }
 
+/* -------------------------------------------------------------------------------------- */
 /* JoinUs.css */
 .joinUs {
 	display: flex;
@@ -369,32 +407,135 @@ hr {
 	color: #0a1172;
 	font-size: 5rem;
 }
-.joinUsMsg{
-	color: #575757;
-}
 .joinUsAlumniImg {
-	height: 30rem;
-	width: 20rem;
-	border-radius: 15rem;
+	height: 25rem;
+	width: 18rem;
 	background-image: linear-gradient(
-		to right,
 		#036ba9,
 		#0081ba,
 		#0098c9,
 		#13aed7,
 		#37c5e2
 	);
+	border-top-left-radius: 5rem;
+	border-bottom-right-radius: 5rem;
 }
-.register{
-  color: #2d383c;
+.register {
+	color: #2d383c;
 }
-.register button{
+.register button {
 	margin-top: 10px;
 	padding: 0.5rem;
 	background-color: #0a1172;
-	color: #d7ebfc;
+	color: #ffffff;
 	font-size: larger;
 	border: none;
 	border-radius: 10px;
 	width: 10rem;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* AlumniAwards */
+.alumniAwards h1,
+.sponser {
+	background-color: #0a1172;
+	color: #ffffff;
+	padding: 0.8rem;
+	text-align: center;
+	margin: 0.1rem 8rem;
+}
+.alumniAwardsInfo {
+	padding: 0.5rem 2rem;
+	margin: 0.2rem 8rem;
+	background-color: #c9e3fa;
+}
+.alumniAwardsCarousel img {
+	width: 70%;
+	height: 35rem;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* OnCampus */
+.onCampusHeading {
+	padding: 13rem 3rem;
+	background-image: linear-gradient(
+		#036ba9,
+		#0081ba,
+		#0098c9,
+		#13aed7,
+		#37c5e2
+	);
+	color: #ffffff;
+}
+
+.onCampusCarousel img {
+	width: 70%;
+	height: 35rem;
+}
+.onCampusCarousel {
+	margin: 1rem 3rem;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* BoUS_Iqac */
+
+.bousIqacHead,
+.techTalksHead,
+.fdpHead {
+	color: #0a1172;
+	text-align: center;
+	padding: 1rem;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* Table */
+
+table {
+	width: 70%;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+th,
+td {
+	padding: 0.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+tr:nth-child(odd) {
+	background-color: rgb(180, 211, 237);
+}
+tr:nth-child(even) {
+	background-color: #c9e3fa;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* AlumniGallery */
+.alumniGalleryCard img {
+	width: 85%;
+	height: 16rem;
+}
+/* .alumniGalleryCard:hover{
+	background-color: #0a1172;
+	color: #ffffff;
+} */
+.alumniGalleryCard {
+	margin-top: 1.5rem;
+	padding: 1rem;
+	text-align: center;
+}
+.alumniGalleryCard p {
+	margin-top: 0.4rem;
+}
+.alumniGalleryHead {
+	text-align: center;
+	background-color: #0a1172;
+	color: #ffffff;
+	width: 100%;
+	padding: 1rem;
+}
+
+.campusDrives {
+	display: block;
+	margin: 2rem auto;
+	width: 75%;
 }
