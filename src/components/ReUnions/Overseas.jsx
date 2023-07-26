@@ -53,7 +53,7 @@ export default function Overseas() {
 
     return (
         <div className="overseas">
-            <h1 data-aos="fade-in-out">Alumini Meets</h1>
+            <h2 data-aos="fade-in-out">Alumini Meets</h2>
             <div>
                 {info.map(Card)}
             </div>

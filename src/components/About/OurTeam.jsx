@@ -79,7 +79,7 @@ export default function OurTeam() {
     ]
     function Card(props) {
         return (
-            <div className="col col-lg-4 col-sm-12 teamCard" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div className="col col-lg-4 col-md-6 col-sm-12 teamCard" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div>
                     <img src={props.img} alt="teamMember" />
                     <div className="teamMember">

@@ -20,6 +20,7 @@ import AlumniGallery from "./components/AlumniEngagement/AlumniGallery";
 import Warble from "./components/WallOfFame/Warble";
 import Celebrities from "./components/WallOfFame/Celebrities";
 import CampusDrives from "./components/AlumniEngagement/CampusDrives";
+
 function App() {
   return (
     <div>

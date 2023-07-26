@@ -7,7 +7,7 @@
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background-color: #c9e3fa;
+	background-color: #bcd4f8;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,7 +25,7 @@
 	border-bottom-left-radius: 10% 50%;
 }
 .formBg {
-	background-color: #0a1172;
+	background-color: #000249;
 	position: relative;
 	padding: 2rem;
 	width: 70%;
@@ -37,30 +37,30 @@
 	width: 4%;
 	right: 3rem;
 	color: aliceblue;
-	background-color: #940000;
+	background-color: #dd1717;
 	border: none;
 	border-radius: 2px;
 	padding: 5px;
 }
 
 .registrationContainer h2 {
-	color: #0a1172;
+	color: #0f4392;
 	text-align: center;
 }
 
 .uploadPicBtn {
-	background-color: #0a1172;
+	background-color: #000249;
 	color: white;
 }
 .uploadPicBtn:hover {
-	background-color: #0a1172;
+	background-color: #000249;
 	color: white;
 }
 
 .formContent,
 option {
 	padding: 1rem;
-	color: #2d383c;
+	color: #000000;
 }
 input,
 textarea,

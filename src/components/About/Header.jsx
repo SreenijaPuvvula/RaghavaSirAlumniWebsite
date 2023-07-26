@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 export default function Header() {
     return (
         <div>
-            <Link style={{textDecoration:"none"}} to="/">
-                <div className="header">
-                    <img className="cvrLogo" src="./images/cvrLogo.png" alt="cvrLogo" />
+
+            <Link style={{ textDecoration: "none" }} className="navbar-brand" to="/">
+                <div className="header ">
+                    <img className="cvrLogo" src="./images/cvr.png" alt="cvrLogo" />
                     <div className="logoName">
                         <h1 className="logoHeading">CVR College Of Engineering</h1>
                         <p className="logoSubHeading">In pursuit of excellence</p>
@@ -91,6 +92,6 @@ export default function Header() {
                     </div>
                 </nav>
             </div>
-        </div>
+        </div >
     )
 }

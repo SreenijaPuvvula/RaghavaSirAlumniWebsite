@@ -169,7 +169,7 @@ export default function AlumniGallery() {
 
     function createCard(props) {
         return (
-            <div className="col col-lg-4 col-sm-12 alumniGalleryCard" data-aos="fade-zoom-in" data-aos-anchor-placement="top-bottom">
+            <div className="col col-lg-4 col-md-6 col-sm-12 alumniGalleryCard" data-aos="fade-zoom-in" data-aos-anchor-placement="top-bottom">
                 <img src={props.img} alt="alumni" />
                 <p>{props.name}</p>
             </div>
@@ -180,8 +180,10 @@ export default function AlumniGallery() {
     return (
         <div className="alumniGallery">
             <h2 className="alumniGalleryHead">Alumni Interaction Image Gallery</h2>
-            <div className="row" style={{ margin: "0" }}>
-                {images.map(createCard)}
+            <div className="container">
+                <div className="row" style={{ margin: "0" }}>
+                    {images.map(createCard)}
+                </div>
             </div>
         </div>
     )

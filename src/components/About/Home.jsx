@@ -3,9 +3,9 @@ import "../styles.css";
 import "aos/dist/aos.css"
 import Aos from "aos";
 export default function Home() {
-    useEffect(()=>{
+    useEffect(() => {
         Aos.init({ duration: 1000 })
-      },[])
+    }, [])
     const contents = [
         {
             h2: "About Us",
@@ -21,7 +21,7 @@ export default function Home() {
         },
         {
             h2: "Campus “The Memories”",
-            info: "The buildings with your classrooms, the trees, the basketball fields, the cricket ground, the corridors filled with aroma of snacks during breaks, the physical directors chasing you back to your classes, your sneaking through the readings in the labs, the canteen’s lunch seemingly exotic over you sharing it with your best friends..how can we capture the myriad experiences of everyone of you on just this page.Do you remember even after the last hours bell rang, the campus was still filled with life, laughter and play until your Mr.M.Narender Reddy sir used to give a nod to the college buses and you were running around to catch the buses leaving the campus.There were days when you stayed back to just hang out with friends and catch the research hour buses.The naughty things you did in the buses,…!Ah…you tried your best to evade the PD’s and the gate watchmen from getting caught and having to get your id card snatched.Ha ha ha..what lovely time!!! Is there a way we can do some time travel ?? Don’t you wish you had a time machine and came back swiftly to those days and relive those days again ?? Well…herez a unique opportunity for you we are here for you to register yourself for the CVR Alumni Association.In order to foster and strengthen the bond between the alma mater and the alumni, the college has registered Alumni Association during the year 2007 with the Regd # 486"
+            info: "The buildings with your classrooms, the trees, the basketball fields, the cricket ground, the corridors filled with aroma of snacks during breaks, the physical directors chasing you back to your classes, your sneaking through the readings in the labs, the canteen’s lunch seemingly exotic over you sharing it with your best friends..how can we capture the myriad experiences of everyone of you on just this page.Do you remember even after the last hours bell rang, the campus was still filled with life, laughter and play until your Mr.M.Narender Reddy sir used to give a nod to the college buses and you were running around to catch the buses leaving the campus.There were days when you stayed back to just hang out with friends and catch the research hour buses.The naughty things you did in the buses,…!Ah…you tried your best to evade the PD’s and the gate watchmen from getting caught and having to get your id card snatched.Ha ha ha..what lovely time!!! Is there a way we can do some time travel ?? Don’t you wish you had a time machine and came back swiftly to those days and relive those days again ?? Well…herez a unique opportunity for you we are here for you to register yourself for the CVR Alumni Association.In order to foster and strengthen the bond between the alma mater and the alumni, the college has registered Alumni Association during the year 2007 with the Regd # 486."
         }
     ]
 
@@ -35,10 +35,13 @@ export default function Home() {
     }
     return (
         <div>
-            <img src="./images/image.jpg" alt="" className="welcomePic" />
-            <div className="welcomeMsg">
-                <h1 id="welcomeMsg1">Welcome To</h1>
-                <h1 id="welcomeMsg2">OFFICE OF ALUMNI AFFAIRS</h1>
+            <div className="welcomeContainer">
+                <div className="welcomePic">
+                    <div className="container welcomeMsg">
+                        <h1 id="welcomeMsg1">Welcome To</h1>
+                        <h1 id="welcomeMsg2">OFFICE OF ALUMNI AFFAIRS</h1>
+                    </div>
+                </div>
             </div>
             <div className="mainBodyContentsDiv">{contents.map(contentFn)}</div>
             <div className="gradient" >

@@ -1,32 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap");
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Nunito Sans", sans-serif;
 }
 
 .joinUsMsg,
 .contentBody,
 .teamMember p,
-.alumniGalleryCard p {
-	color: #454545;
-}
+.alumniGalleryCard p,
+.exhibitDiv h2,
 .tableRow,
 .moUsContents p,
 .teamMember p,
 .wofCardInfo,
 .alumniAwardsInfo {
-	color: #2d383c;
+	color: black;
 }
 
 /* -------------------------------------------------------------------------------------- */
 /* Header.css */
 
 .logoHeading {
-	color: #2d383c;
+	color: #fff;
 	font-size: 3rem;
-	font-weight: 500;
+	font-weight: 400;
 	margin: 0;
 }
 .logoSubHeading {
-	color: #0098c9;
+	color: #bcd4f8;
 	font-size: larger;
 	margin: 0 0 0 66%;
 }
@@ -34,16 +34,21 @@ body {
 	width: 110px;
 	height: 110px;
 	margin-left: 1.3rem;
+	margin-top: 0.8%;
 }
 .header {
 	display: flex;
 	padding: 0.5rem;
+	background-color: #0f4392;
 }
 .logoName {
 	padding: 10px;
 }
 .navBarContainer {
-	background-color: #c9e3fa;
+	background-color: #bcd4f8;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
 .navbar {
 	padding: 0;
@@ -52,11 +57,16 @@ body {
 	font-size: medium;
 	margin-right: 3rem;
 }
-.nav-link {
-	color: #2d383c;
+.nav-link:hover {
+	color: #dd1717;
+}
+
+.nav-link,
+.dropdown-item {
+	color: black;
 }
 .dropdown-item:active {
-	background-color: #0a1172;
+	background-color: #dd1717;
 }
 .about {
 	margin-left: 1rem;
@@ -67,7 +77,7 @@ body {
 
 .footer {
 	color: #949494;
-	background-color: #2d383c;
+	background-color: #2e3639;
 	margin: 0;
 	padding: 0.5rem;
 	font-size: small;
@@ -80,14 +90,24 @@ body {
 /* -------------------------------------------------------------------------------------- */
 /* MainBody.css */
 
+.welcomeContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .welcomePic {
-	width: 100%;
-	height: 28rem;
 	position: relative;
+	width: 100%;
+	min-height: 77vh;
+	background-image: url("D:\AlumniWebSite\my-app\public\images\imageDark2.jpg");
+	background-size: 100% 77vh;
+}
+#welcomeMsg1 {
+	color: #dd1717;
 }
 .welcomeMsg {
 	position: absolute;
-	top: 55%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
@@ -103,33 +123,19 @@ body {
 	padding: 3rem 4rem 0;
 }
 .contentHeading {
-	color: #0a1172;
+	color: #dd1717;
 }
 .mainBodyContentsDiv {
 	margin-bottom: 3rem;
 }
 .gradient {
-	background: hsla(208, 83%, 88%, 1);
-
-	background: linear-gradient(
-		45deg,
-		hsla(208, 83%, 88%, 1) 0%,
-		hsla(195, 100%, 39%, 1) 100%
-	);
-
-	background: -moz-linear-gradient(
-		45deg,
-		hsla(208, 83%, 88%, 1) 0%,
-		hsla(195, 100%, 39%, 1) 100%
-	);
-
 	background: -webkit-linear-gradient(
-		45deg,
-		hsla(208, 83%, 88%, 1) 0%,
-		hsla(195, 100%, 39%, 1) 100%
+		90deg,
+		hsla(238, 100%, 14%, 1) 0%,
+		hsla(216, 81%, 32%, 1) 100% /* hsla(329, 20%, 24%, 1) 100% */
 	);
 
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C9E3FA", endColorstr="#0098C9", GradientType=1 );
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0F4392", endColorstr="#000249", GradientType=1 );
 	padding: 3rem;
 	text-align: center;
 	color: #ffffff;
@@ -155,33 +161,47 @@ body {
 }
 
 .moUsContents {
-	margin-top: 3rem;
 	display: flex;
-	width: 75%;
+	margin-top: 3rem;
+	position: relative;
+	max-width: 75%;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 2rem;
-	background-color: #c9e3fa;
+	background-color: #bcd4f8;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .moUsContents h2 {
-	color: #0a1172;
+	color: #dd1717;
 }
-.moUsDescriptionRight {
-	padding: 0.5rem 1.5rem 1.5rem 1.5rem;
-	margin-left: 3rem;
-}
+.moUsDescriptionRight,
 .moUsDescriptionLeft {
-	padding: 0.5rem 1.5rem 1.5rem 1.5rem;
-	margin-right: 3rem;
+	padding: 2rem;
 }
-.moUsDescription p {
-	margin-top: 2rem;
+.moUsContents p {
+	margin-top: 1rem;
+}
+.moUsImageContainer {
+	max-width: 380px;
+	flex: 0 0 380px;
+	padding: 1rem;
 }
 .moUsImage {
-	width: 374px;
+	max-width: 100%;
 	height: 324px;
 }
-
+@media screen and (max-width: 998px) {
+	.moUsImageContainer {
+		max-width: 100%;
+	}
+	.moUsImage {
+		width: 100%;
+	}
+	.moUsContents {
+		flex-direction: column;
+	}
+}
 /* -------------------------------------------------------------------------------------- */
 /* Exhibits.css */
 
@@ -193,7 +213,7 @@ body {
 	height: 30rem;
 }
 .exhibitBox {
-	border: 3px solid #c9e3fa;
+	border: 3px solid #bcd4f8;
 	width: fit-content;
 	margin: 3rem;
 	margin-left: auto;
@@ -206,16 +226,13 @@ body {
 .exhibitDiv {
 	margin: 3.5rem 15%;
 }
-.exhibitDiv h2 {
-	color: #2d383c;
-}
 .alumniCarousel {
 	display: flex;
 	padding: 1rem;
 	margin-left: 5%;
 }
 .alumniCarousel h2 {
-	color: #0a1172;
+	color: #dd1717;
 	font-weight: 600;
 	margin-left: auto;
 	margin-right: auto;
@@ -251,7 +268,7 @@ hr {
 .sliderOuter {
 	width: 60%;
 	height: 14rem;
-	background-color: #c9e3fa;
+	background-color: #bcd4f8;
 	overflow: hidden;
 }
 .sliderInner {
@@ -291,26 +308,29 @@ hr {
 .teamContainer {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	margin-left: 3rem;
-	margin-right: auto;
-	display: block;
+	display: flex;
+	justify-content: space-evenly;
 }
 .teamCard {
 	padding: 10px;
 	width: 30%;
-	background-color: #c9e3fa;
-	margin: 1rem;
+	background-color: #bcd4f8;
+	margin: 1rem 1.5rem;
 	text-align: center;
+	border-radius: 1rem;
+	position: relative;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .teamCard img {
-	width: 200px;
-	height: 200px;
-	padding: 10px;
+	width: 170px;
+	height: 170px;
 	margin: 1rem;
-	border: 1px solid #0a1172;
+	border: 1px solid #000249;
+	border-radius: 5rem;
 }
 .teamMember h4 {
-	color: #0a1172;
+	color: #dd1717;
 }
 
 /* -------------------------------------------------------------------------------------- */
@@ -331,7 +351,11 @@ hr {
 }
 .leftOverseasCard,
 .rightOverseasCard {
-	background-color: #0098c9;
+	background: -webkit-linear-gradient(
+		90deg,
+		hsla(238, 100%, 14%, 1) 0%,
+		hsla(216, 81%, 32%, 1) 100% /* hsla(329, 20%, 24%, 1) 100% */
+	);
 }
 .leftOverseasImage {
 	margin-top: 10px;
@@ -350,17 +374,17 @@ hr {
 .middleOverseasCard {
 	margin: 3rem;
 }
-.middleOverseasCard h3 {
-	color: #2d383c;
-}
 .middleOverseasCard img {
 	padding-top: 10px;
 }
-.overseas h1 {
-	background-color: #0a1172;
+.overseas h2 {
+	background-color: #000249;
 	color: #ffffff;
-	padding: 1.2rem;
-	padding-left: 2rem;
+	padding: 0.5rem;
+	text-align: center;
+}
+.middleOverseasCard h3 {
+	color: #dd1717;
 }
 
 .rightOverseasCard {
@@ -373,24 +397,41 @@ hr {
 
 .wof h1 {
 	text-align: center;
-	color: #0a1172;
+	color: #dd1717;
 	padding-top: 2rem;
 }
 .wallOfFameCard {
 	display: flex;
-	background: #c9e3fa;
+	position: relative;
+	background: #bcd4f8;
+	max-width: 80%;
 	margin: 2rem 12rem;
 	padding: 1.5rem;
 	border-radius: 0.5rem;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .wofImage {
+	position: relative;
 	width: 12rem;
 	height: 12rem;
 	border-radius: 10rem;
 	margin-left: 3rem;
+	border: 1px solid #000249;
 }
 .wofCardInfo {
 	margin: 1.5rem 2rem;
+}
+@media screen and (max-width: 960px) {
+	.wallOfFameCard {
+		flex-direction: column;
+		margin: 2rem;
+	}
+	.wofImage {
+		justify-content: center;
+		align-items: center;
+		max-width: 100%;
+	}
 }
 
 /* -------------------------------------------------------------------------------------- */
@@ -404,29 +445,27 @@ hr {
 	padding: 4rem;
 }
 .quote {
-	color: #0a1172;
+	color: #0f4392;
 	font-size: 5rem;
 }
 .joinUsAlumniImg {
 	height: 25rem;
 	width: 18rem;
-	background-image: linear-gradient(
-		#036ba9,
-		#0081ba,
-		#0098c9,
-		#13aed7,
-		#37c5e2
+	background: -webkit-linear-gradient(
+		90deg,
+		hsla(238, 100%, 14%, 1) 0%,
+		hsla(216, 81%, 32%, 1) 100% /* hsla(329, 20%, 24%, 1) 100% */
 	);
 	border-top-left-radius: 5rem;
 	border-bottom-right-radius: 5rem;
 }
 .register {
-	color: #2d383c;
+	color: #000000;
 }
 .register button {
 	margin-top: 10px;
 	padding: 0.5rem;
-	background-color: #0a1172;
+	background-color: #0f4392;
 	color: #ffffff;
 	font-size: larger;
 	border: none;
@@ -438,7 +477,7 @@ hr {
 /* AlumniAwards */
 .alumniAwards h1,
 .sponser {
-	background-color: #0a1172;
+	background-color: #000249;
 	color: #ffffff;
 	padding: 0.8rem;
 	text-align: center;
@@ -447,7 +486,7 @@ hr {
 .alumniAwardsInfo {
 	padding: 0.5rem 2rem;
 	margin: 0.2rem 8rem;
-	background-color: #c9e3fa;
+	background-color: #bcd4f8;
 }
 .alumniAwardsCarousel img {
 	width: 70%;
@@ -458,13 +497,13 @@ hr {
 /* OnCampus */
 .onCampusHeading {
 	padding: 13rem 3rem;
-	background-image: linear-gradient(
-		#036ba9,
-		#0081ba,
-		#0098c9,
-		#13aed7,
-		#37c5e2
+	background: -webkit-linear-gradient(
+		90deg,
+		hsla(238, 100%, 14%, 1) 0%,
+		hsla(216, 81%, 32%, 1) 100% /* hsla(329, 20%, 24%, 1) 100% */
 	);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0F4392", endColorstr="#000249", GradientType=1 );
 	color: #ffffff;
 }
 
@@ -482,7 +521,7 @@ hr {
 .bousIqacHead,
 .techTalksHead,
 .fdpHead {
-	color: #0a1172;
+	color: #dd1717;
 	text-align: center;
 	padding: 1rem;
 }
@@ -502,10 +541,10 @@ td {
 	padding-right: 2rem;
 }
 tr:nth-child(odd) {
-	background-color: rgb(180, 211, 237);
+	background-color: #cddffa;
 }
 tr:nth-child(even) {
-	background-color: #c9e3fa;
+	background-color: #bcd4f8;
 }
 
 /* -------------------------------------------------------------------------------------- */
@@ -513,27 +552,43 @@ tr:nth-child(even) {
 .alumniGalleryCard img {
 	width: 85%;
 	height: 16rem;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.alumniGallery .row {
+	display: flex;
+	justify-content: space-evenly;
 }
 /* .alumniGalleryCard:hover{
-	background-color: #0a1172;
+	background-color: #dd1717;
 	color: #ffffff;
 } */
 .alumniGalleryCard {
-	margin-top: 1.5rem;
 	padding: 1rem;
 	text-align: center;
 }
 .alumniGalleryCard p {
 	margin-top: 0.4rem;
+	font-size: x-large;
+	color: #dd1717;
 }
 .alumniGalleryHead {
 	text-align: center;
-	background-color: #0a1172;
+	background-color: #000249;
 	color: #ffffff;
 	width: 100%;
-	padding: 1rem;
+	padding: 0.5rem;
+	margin-bottom: 2rem;
 }
-
+@media screen and (max-width: 574px) {
+	.alumniGalleryCard {
+		width: 100%;
+	}
+	.alumniGalleryCard img {
+		width: max-content;
+	}
+}
+/* -------------------------------------------------------------------------------------- */
+/* .campusDrives */
 .campusDrives {
 	display: block;
 	margin: 2rem auto;

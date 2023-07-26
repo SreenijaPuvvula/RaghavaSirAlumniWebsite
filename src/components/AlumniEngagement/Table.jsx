@@ -3,7 +3,7 @@ export default function Table(props) {
 
     function createHead(props) {
         return (
-            <tr className="tableHead" style={{ backgroundColor: "#c9e3fa",color:"#2d383c" }}>
+            <tr className="tableHead" style={{ backgroundColor: "#bcd4f8" }}>
                 <th>{props.h1}</th>
                 <th>{props.h2}</th>
                 <th>{props.h3}</th>

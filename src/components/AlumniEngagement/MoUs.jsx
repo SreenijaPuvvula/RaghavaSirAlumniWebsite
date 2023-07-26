@@ -11,8 +11,10 @@ export default function MoUs() {
     return (
         <div className="moUs">
             <img src="./images/mou.png" alt="" className="mousPicMain" />
-            <div className="moUsContents" data-aos="fade-right"  data-aos-easing="ease-in">
-                <img src="./images/mdx.png" alt="" className="moUsImage" />
+            <div className="moUsContents" data-aos="fade-right" data-aos-easing="ease-in">
+                <div className="moUsImageContainer">
+                    <img src="./images/mdx.png" alt="" className="moUsImage" />
+                </div>
                 <div className="moUsDescriptionRight">
                     <h2>MoU with Fragma Data Systems</h2>
                     <p>
@@ -21,7 +23,7 @@ export default function MoUs() {
                     </p>
                 </div>
             </div>
-            <div className="moUsContents" data-aos="fade-left"  data-aos-easing="ease-in">
+            <div className="moUsContents" data-aos="fade-left" data-aos-easing="ease-in">
                 <div className="moUsDescriptionLeft" >
                     <h2>MoU with Fragma Data Systems</h2>
                     <p>
@@ -29,7 +31,9 @@ export default function MoUs() {
                         This MoU caters to offering Consultancy Projects, collaboration in Research, Knowledge Transfer to the faculty on AI, Big Data Ecosystems, and Cloud Computing.
                     </p>
                 </div>
-                <img src="./images/mdx_mou.png" alt="" className="moUsImage" />
+                <div className="moUsImageContainer">
+                    <img src="./images/mdx_mou.png" alt="" className="moUsImage" />
+                </div>
             </div>
         </div>
     )
