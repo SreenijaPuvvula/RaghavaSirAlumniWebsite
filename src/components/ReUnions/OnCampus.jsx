@@ -15,7 +15,7 @@ export default function OnCampus() {
         { img: "https://cvr.ac.in/alumni/images/CVR_AL.png", head: "Alumni Meet" },
         { img: "https://cvr.ac.in/alumni/images/cseal2.jpg", head: "Alumni Meet 2016" },
         { img: "https://cvr.ac.in/alumni/images/cseal3.jpg", head: "Alumni Meet 2017" },
-        { img: "https://cvr.ac.in/alumni/images/cseal4.png", head: "Alumni Meet 2019" },
+        { img: "./images/meet2019.png", head: "Alumni Meet 2019" },
         { img: "https://cvr.ac.in/alumni/images/cseal5.jpg", head: "Alumni Meet 2020" },
     ]
     return (

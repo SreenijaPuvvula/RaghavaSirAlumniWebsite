@@ -3,19 +3,6 @@ body {
 	font-family: "Nunito Sans", sans-serif;
 }
 
-.joinUsMsg,
-.contentBody,
-.teamMember p,
-.alumniGalleryCard p,
-.exhibitDiv h2,
-.tableRow,
-.moUsContents p,
-.teamMember p,
-.wofCardInfo,
-.alumniAwardsInfo {
-	color: black;
-}
-
 /* -------------------------------------------------------------------------------------- */
 /* Header.css */
 
@@ -68,10 +55,20 @@ body {
 .dropdown-item:active {
 	background-color: #dd1717;
 }
-.about {
-	margin-left: 1rem;
+.togglertBtn{
+	margin: 10px;
 }
-
+.togglertBtn:focus{
+	box-shadow: none;
+}
+@media screen and (max-width : 987px) {
+	.nav-item{
+		margin-left: 1rem;
+	}
+	.cvrLogo{
+		margin-left: 0;
+	}
+}
 /* -------------------------------------------------------------------------------------- */
 /* Footer.css */
 
@@ -99,7 +96,7 @@ body {
 	position: relative;
 	width: 100%;
 	min-height: 77vh;
-	background-image: url("D:\AlumniWebSite\my-app\public\images\imageDark2.jpg");
+	background-image: url("D:\AlumniWebSite\my-app\public\images\image.jpg");
 	background-size: 100% 77vh;
 }
 #welcomeMsg1 {
@@ -327,7 +324,6 @@ hr {
 	height: 170px;
 	margin: 1rem;
 	border: 1px solid #000249;
-	border-radius: 5rem;
 }
 .teamMember h4 {
 	color: #dd1717;
@@ -431,6 +427,7 @@ hr {
 		justify-content: center;
 		align-items: center;
 		max-width: 100%;
+		margin-left: 5rem;
 	}
 }
 
@@ -593,4 +590,25 @@ tr:nth-child(even) {
 	display: block;
 	margin: 2rem auto;
 	width: 75%;
+}
+
+/* Video.css */
+.videoContainer {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+.video {
+	width: 400px;
+	height: 270px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	margin-top: 1rem;
+}
+.videoParent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

@@ -20,6 +20,7 @@ import AlumniGallery from "./components/AlumniEngagement/AlumniGallery";
 import Warble from "./components/WallOfFame/Warble";
 import Celebrities from "./components/WallOfFame/Celebrities";
 import CampusDrives from "./components/AlumniEngagement/CampusDrives";
+import Videos from "./components/Videos";
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function App() {
           <Route path="/warble" element={<Warble />}></Route>
           <Route path="/celebrities" element={<Celebrities />}></Route>
           <Route path="/campusDrives" element={<CampusDrives />}></Route>
-
+          <Route path="/videos" element={<Videos />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

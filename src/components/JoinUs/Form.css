@@ -28,8 +28,9 @@
 	background-color: #000249;
 	position: relative;
 	padding: 2rem;
+	padding-right: 3.5rem;
 	width: 70%;
-	margin-top: 28%;
+	margin-top: 32%;
 	margin-bottom: 5rem;
 }
 .closeBtn {
@@ -79,7 +80,7 @@ button {
 
 @media screen and (max-width: 768px) {
 	.formBg{
-        margin-top: 140%;
+        margin-top: 150%;
         margin-bottom: 0;
         width:100%;
         height: fit-content;
