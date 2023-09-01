@@ -1,6 +1,19 @@
 import React from "react";
 import CreateCard from "./CreateCard";
+import TopScrollBtn from "./TopScrollButton";
+import { useState,useEffect } from "react";
 export default function GovtOfficials() {
+    const [showBtn, setShowBtn] = useState(false);
+    useEffect(()=>{
+        window.addEventListener("scroll",()=>{
+           if(window.scrollY>400){
+             setShowBtn(true);
+           }
+           else{
+            setShowBtn(false)
+           }
+        })
+    })
     const govtInfo = [
         {
             id: 1,
@@ -111,6 +124,7 @@ export default function GovtOfficials() {
         <div className="wof">
             <h1>Government Officials</h1>
             <CreateCard info={govtInfo} />
+            <TopScrollBtn showBtn={showBtn}/>
         </div>
     )
 }

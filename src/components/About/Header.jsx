@@ -8,8 +8,11 @@ export default function Header() {
                 <div className="header ">
                     <img className="cvrLogo" src="./images/cvr.png" alt="cvrLogo" />
                     <div className="logoName">
-                        <h1 className="logoHeading">CVR College Of Engineering</h1>
-                        <p className="logoSubHeading">In pursuit of excellence</p>
+                        <h1 className="logoHeading">CVR COLLEGE OF ENGINEERING</h1>
+                        <p className="logoSubHeading">In Pursuit Of Excellence</p>
+                    </div>
+                    <div className="officeOfAlumniAffairs">
+                        <h1>OFFICE OF ALUMNI AFFAIRS</h1>
                     </div>
                 </div>
             </Link>

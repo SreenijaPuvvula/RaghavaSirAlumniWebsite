@@ -1,35 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap");
+
+@import url('https://fonts.cdnfonts.com/css/cg-omega');
+
+                
 body {
 	font-family: "Nunito Sans", sans-serif;
+}
+.header{
+	font-family: 'CG Omega', sans-serif;                                        
 }
 
 /* -------------------------------------------------------------------------------------- */
 /* Header.css */
-
+.header {
+	display: flex;
+	padding: 0.5rem;
+	position: relative;
+	background-color: #0f4392;
+}
 .logoHeading {
 	color: #fff;
 	font-size: 3rem;
-	font-weight: 400;
 	margin: 0;
 }
 .logoSubHeading {
 	color: #bcd4f8;
 	font-size: larger;
-	margin: 0 0 0 66%;
+	position: absolute;
+	right: 12px;
 }
 .cvrLogo {
 	width: 110px;
 	height: 110px;
-	margin-left: 1.3rem;
 	margin-top: 0.8%;
 }
-.header {
-	display: flex;
-	padding: 0.5rem;
-	background-color: #0f4392;
-}
+
 .logoName {
 	padding: 10px;
+	padding-top: 20px;
+	position: relative;
 }
 .navBarContainer {
 	background-color: #bcd4f8;
@@ -56,10 +65,16 @@ body {
 	background-color: #dd1717;
 }
 .togglertBtn{
-	margin: 10px;
+	margin: 2px;
 }
 .togglertBtn:focus{
 	box-shadow: none;
+}
+.officeOfAlumniAffairs{
+	position: absolute;
+	right: 8px;
+	color: white;
+    top: 30%;
 }
 @media screen and (max-width : 987px) {
 	.nav-item{
@@ -67,6 +82,12 @@ body {
 	}
 	.cvrLogo{
 		margin-left: 0;
+	}
+	
+}
+@media screen and (max-width : 1460px){
+	.officeOfAlumniAffairs{
+		display: none;
 	}
 }
 /* -------------------------------------------------------------------------------------- */
@@ -95,12 +116,13 @@ body {
 .welcomePic {
 	position: relative;
 	width: 100%;
-	min-height: 77vh;
-	background-image: url("D:\AlumniWebSite\my-app\public\images\image.jpg");
+	min-height: 76vh;
+	background-image: url("D:\AlumniWebSite\my-app\public\images\alumnibg.jpg");
 	background-size: 100% 77vh;
 }
 #welcomeMsg1 {
 	color: #dd1717;
+	font-weight: 600;
 }
 .welcomeMsg {
 	position: absolute;
@@ -110,11 +132,12 @@ body {
 	text-align: center;
 	width: fit-content;
 	height: fit-content;
-	color: #ffffff;
+	color: #0f4392;
 }
 #welcomeMsg2 {
 	font-size: 4rem;
 	padding: 10px;
+	font-weight: 900;
 }
 .contents {
 	padding: 3rem 4rem 0;
@@ -123,7 +146,7 @@ body {
 	color: #dd1717;
 }
 .mainBodyContentsDiv {
-	margin-bottom: 3rem;
+	margin-bottom: 4rem;
 }
 .gradient {
 	background: -webkit-linear-gradient(
@@ -305,23 +328,31 @@ hr {
 .teamContainer {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+}
+.teamContainer .row{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	flex-wrap: wrap;
+	justify-items: left;
 }
 .teamCard {
 	padding: 10px;
-	width: 30%;
+	width: 28%;
 	background-color: #bcd4f8;
 	margin: 1rem 1.5rem;
 	text-align: center;
 	border-radius: 1rem;
 	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
 	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
 		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .teamCard img {
-	width: 170px;
-	height: 170px;
+	width: 160px;
+	height: 150px;
 	margin: 1rem;
 	border: 1px solid #000249;
 }
@@ -418,6 +449,15 @@ hr {
 .wofCardInfo {
 	margin: 1.5rem 2rem;
 }
+.topScrollBtn{
+	position: fixed;
+	right: 20px;
+	bottom: 45px;
+	font-size: 70px;
+	border-radius: 20px;
+	border: none;
+    color:#dd1717;
+}
 @media screen and (max-width: 960px) {
 	.wallOfFameCard {
 		flex-direction: column;
@@ -468,6 +508,24 @@ hr {
 	border: none;
 	border-radius: 10px;
 	width: 10rem;
+}
+@media screen and (max-width:1212px) {
+	.joinUs{
+		margin:1rem;
+	}
+	.joinUsAlumniImg{
+		height: 20rem;
+		width: 14rem;
+	}
+}
+@media screen and (max-width:800px) {
+	.joinUsAlumniImg{
+		display: none;
+	}
+    .joinUs div{
+		padding-right: 0;
+		padding-left: 1rem;
+	}
 }
 
 /* -------------------------------------------------------------------------------------- */

@@ -1,6 +1,19 @@
 import React from "react";
 import CreateCard from "./CreateCard";
+import TopScrollBtn from "./TopScrollButton";
+import { useState,useEffect } from "react";
 export default function Doctorates() {
+    const [showBtn, setShowBtn] = useState(false);
+    useEffect(()=>{
+        window.addEventListener("scroll",()=>{
+           if(window.scrollY>400){
+             setShowBtn(true);
+           }
+           else{
+            setShowBtn(false)
+           }
+        })
+    })
     const doctorates = [
         {
             id: 1,
@@ -184,6 +197,7 @@ export default function Doctorates() {
         <div className="wof">
             <h1>Doctorates</h1>
             <CreateCard info={doctorates}/>
+            <TopScrollBtn showBtn={showBtn}/>
         </div>
     )
 }

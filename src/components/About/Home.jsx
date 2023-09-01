@@ -39,7 +39,7 @@ export default function Home() {
                 <div className="welcomePic">
                     <div className="container welcomeMsg">
                         <h1 id="welcomeMsg1">Welcome To</h1>
-                        <h1 id="welcomeMsg2">OFFICE OF ALUMNI AFFAIRS</h1>
+                        <h1 id="welcomeMsg2">CVR ALUMNI ASSOCIATION</h1>
                     </div>
                 </div>
             </div>

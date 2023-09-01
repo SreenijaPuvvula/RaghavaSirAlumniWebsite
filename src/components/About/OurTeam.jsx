@@ -4,9 +4,9 @@ import Aos from "aos";
 import { useEffect } from "react";
 export default function OurTeam() {
 
-   useEffect(()=>{
-     Aos.init({ duration: 1000 })
-   },[])
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, [])
 
     const teamInfo = [
         {
@@ -79,14 +79,12 @@ export default function OurTeam() {
     ]
     function Card(props) {
         return (
-            <div className="col col-lg-4 col-md-6 col-sm-12 teamCard" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                <div>
-                    <img src={props.img} alt="teamMember" />
-                    <div className="teamMember">
-                        <h4>{props.name}</h4>
-                        <p>{props.dept}</p>
-                        <p>{props.role}</p>
-                    </div>
+            <div className="col col-lg-4 col-sm-12 teamCard" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <img src={props.img} alt="teamMember" />
+                <div className="teamMember">
+                    <h4>{props.name}</h4>
+                    <p>{props.dept}</p>
+                    <p>{props.role}</p>
                 </div>
             </div>
         )

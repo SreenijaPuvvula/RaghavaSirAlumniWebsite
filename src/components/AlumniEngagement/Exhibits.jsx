@@ -49,7 +49,7 @@ export default function Exhibits() {
                 <hr />
                 <div className="alumniCarousel">
                     <div className="h2">
-                        <h2 data-aos="fade-out">Product Exhibits by Alumni</h2>
+                        <h2>Product Exhibits by Alumni</h2>
                     </div>
                     <ProductExhibits/>
                 </div>

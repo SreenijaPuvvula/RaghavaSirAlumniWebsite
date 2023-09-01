@@ -1,6 +1,19 @@
-import CreateCard from "./CreateCard"
-
+import CreateCard from "./CreateCard";
+import TopScrollBtn from "./TopScrollButton";
+import { useState,useEffect } from "react";
 export default function Celebrities() {
+    const [showBtn, setShowBtn] = useState(false);
+    useEffect(()=>{
+        window.addEventListener("scroll",()=>{
+           if(window.scrollY>400){
+             setShowBtn(true);
+           }
+           else{
+            setShowBtn(false)
+           }
+        })
+    })
+
     const info = [
         {
             name: "Rahul K Velpula",
@@ -45,10 +58,13 @@ export default function Celebrities() {
             img: "https://cvr.ac.in/alumni/images/Phaniraj1.jpg"
         }
     ]
+
+    
     return (
         <div className="wof">
             <h1>Celebrities</h1>
             <CreateCard info={info} />
+            <TopScrollBtn showBtn={showBtn}/>
         </div>
     )
 }

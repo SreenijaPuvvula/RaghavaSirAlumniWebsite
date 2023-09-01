@@ -1,6 +1,18 @@
 import CreateCard from "./CreateCard"
-
+import TopScrollBtn from "./TopScrollButton";
+import { useState,useEffect } from "react";
 export default function Warble(){
+    const [showBtn, setShowBtn] = useState(false);
+    useEffect(()=>{
+        window.addEventListener("scroll",()=>{
+           if(window.scrollY>400){
+             setShowBtn(true);
+           }
+           else{
+            setShowBtn(false)
+           }
+        })
+    })
     const info=[
         {
             name:"Susmita Kandadai:",
@@ -128,6 +140,7 @@ export default function Warble(){
         <div className="wof">
             <h1>Warble</h1>
             <CreateCard info={info}/>
+            <TopScrollBtn showBtn={showBtn}/>
         </div>
     )
 }
